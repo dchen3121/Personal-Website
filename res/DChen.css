@@ -154,7 +154,7 @@ body {
 }
 
 .about p{
-	padding-bottom:15px;
+	padding:0px 5% 15px 5%;
 	font-size:15pt Arial;
 	line-height:130%;
 	text-align:justify;
