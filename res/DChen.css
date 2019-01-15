@@ -1,0 +1,262 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family: Trebuchet MS;
+	background: #FFF;
+}
+
+.DClogo {
+    z-index:20!important;
+    position:fixed;
+    margin-top:6px;
+    margin-left:6px;
+    width:45px;
+    height:45px;
+}
+
+.heading {
+	position:fixed;
+	width:100%;
+	z-index:10!important;
+}
+
+.main-navigation {
+	list-style: none;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:right;
+	background:rgba(40,40,40,0.7);
+}
+
+.main-navigation:hover{
+	background:rgba(40,40,40,1.0);
+}
+
+.main-navigation li {
+	display:inline-block;
+	margin-left:2%;
+	margin-right:3%;
+}
+
+.main-navigation li a {
+	color:#EEE;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:14pt;
+}
+
+.main-navigation li a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	font-weight:bold;
+	text-shadow:0px 0px 1px rgba(255, 255, 255, 0.5);
+}
+
+.titleText {
+    background-image:url(../images/night_sky_bg.jpeg);
+    background-repeat:repeat;
+    background-size:100%;
+    background-position:center;
+	padding-top:140px; /*to make it not overlap the navigation panel*/
+    padding-bottom:30px;
+    padding-left:10%;
+    padding-right:10%;
+	z-index:-1;
+
+	color:rgb(255, 255, 255);
+	text-align:right;
+}
+
+
+.titleText h3{
+    font-size:18pt;
+	text-shadow:0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+.titleText h5{
+    padding-top:13px;
+    font-size:10pt;
+	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.8);
+}
+/*
+.titleText td {
+    border:1px solid black;
+    border-collapse:separate;
+}
+
+.titleTextData{
+    width:20%;
+    text-align:right;
+    color:#363636;
+	font-size:12pt;
+	text-shadow:0px 0px 1px rgba(255,255,255,0.5);
+}
+
+.titleTextDChen {
+    width:40%;
+    color:#FFF;
+	font-size:50pt;
+	font-weight:bold;
+	text-align:left;
+	text-shadow:-1px 1px 12px rgba(0,0,0,1.0);
+}*/
+
+.body {
+	margin-top:0px;
+	padding:0px;
+}
+
+
+.about {
+    margin-top:100px;
+    padding:40px;
+	background-color:#CCCCCC;
+	border:0px solid white;
+	border-radius:30px;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	/*
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));*/
+}
+
+@media (max-width: 650px) {
+    .about {
+        width:90%;
+    }
+}
+
+.about h1{
+    padding-top:20px;
+	padding-bottom:20px;
+	color:#003;
+	font-size:28pt;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.about h1:after {
+    width:100px;
+    height:2px;
+    background-color:#000090;
+    display:block;
+    content:" ";
+    margin:0px auto;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.about p{
+	padding-bottom:15px;
+	font-size:15pt Arial;
+	line-height:130%;
+	text-align:justify;
+	text-transform:none;
+	color: rgba(0, 0, 40, 0.85);
+}
+
+.about a {
+    color:black;
+    text-decoration:none;
+}
+
+
+.projects h1{
+    padding-top:60px;
+	padding-bottom:20px;
+	color:#003;
+	font-size:28pt;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.projects h1:after {
+    width:100px;
+    height:2px;
+    background-color:#000090;
+    display:block;
+    content:" ";
+    margin:0px auto;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.projects {
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.carousel {
+    border:10px groove rgb(0,0,0);
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+    height:500px;
+}
+
+
+@media (max-width: 550px) {
+    .carousel {
+        width:85%;
+        height:85%;
+    }
+}
+
+.end {
+	background-color:#00004D;
+	padding-top:50px;
+	text-align:center;
+	color:rgb(255,255,255);
+}
+
+.end h2{
+	color:#FFF;
+	font-size:26pt;
+	font-weight:bold;
+	padding-bottom: 20px;
+}
+
+.end p {
+	color:#EEE;
+	font-size:11pt;
+	text-decoration:none;
+	font-weight:normal;
+	padding:3px;
+}
+
+.end h6, .end a {
+	color:#EFEFEF;
+	font-size: 12pt;
+	padding:20px 0px;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+.end table{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.end table td{
+    border:10px solid rgba(0, 0, 0, 0);
+}
+
+.end img {
+    background-color:rgb(255,255,255);
+    border:3px solid white;
+    border-radius:2px;
+    width:30px;
+    height:30px;
+}
+
+	
