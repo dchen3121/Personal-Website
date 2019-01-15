@@ -13,8 +13,8 @@ body {
     position:fixed;
     margin-top:6px;
     margin-left:6px;
-    width:45px;
-    height:45px;
+    width:39px;
+    height:39px;
 }
 
 .heading {
@@ -160,6 +160,10 @@ body {
 	text-align:justify;
 	text-transform:none;
 	color: rgba(0, 0, 40, 0.85);
+}
+
+.btn {
+    margin-left: 5%;
 }
 
 .about a {
