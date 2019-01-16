@@ -14,8 +14,14 @@
 	<link href="res/DChen.css" type="text/css" rel="stylesheet"/>
     <!--script src="node_modules/bootstrap/dist/js/bootstrap.min.js"
 			type="text/javascript"></script-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--script type = "text/javascript">
+         $(document).ready(function() {
+    		  $(".various"+(new Date().getTime() % 2 + 1)).css("display", "block");
+         });
+    </script-->
+	<script src="res/DChen.js" type="text/javascript"></script>
 
 </head>
 
@@ -44,13 +50,24 @@
 	</div>
 
 	<div class="titleText" id="top">
-		<h3>
-			“I like the night. Without the dark, we'd never see the
-			stars.”
-		</h3>
-		<h5>
-			― Stephenie Meyer, Twilight
-		</h5>
+		<div class="various1" style="display:none;">
+			<h3>
+				“I like the night. Without the dark, we'd never see the
+				stars.”
+			</h3>
+			<h5>
+				― Stephenie Meyer, Twilight
+			</h5>
+		</div>
+		<div class="various2" style="display:none;">
+			<h3>
+				“Some people dream of success, while other people get up
+				every morning and make it happen."
+			</h3>
+			<h5>
+				― Wayne Huizenga
+			</h5>
+		</div>
 	</div>
 
 </header>
