@@ -68,9 +68,18 @@
 				― Wayne Huizenga
 			</h5>
 		</div>
+		<div class="various3" style="display:none;">
+			<h3>
+				“How can you look at the galaxy and not feel insignificant?"
+			</h3>
+			<h5>
+				― Ridley Scott
+			</h5>
+		</div>
 	</div>
 
 </header>
+
 
 <div class="container about" id="about">
 	<h1>DANIEL CHEN</h1>
@@ -80,18 +89,20 @@
 	</p>
 	<p>
 		I am currently an undergraduate student at <span style="font-weight:bold">
-		<a href="https://uwaterloo.ca/">University of Waterloo</a></span>, pursuing the degree in <span style="font-weight:bold">
-		<a href="https://cs.uwaterloo.ca/">Computer Science</a></span>. I am currently a 1st year student,
-		with a GPA of 3.98 and a cumulative average of 93%.
+		<a href="https://uwaterloo.ca/">University of Waterloo</a></span>, pursuing a degree in
+		<span style="font-weight:bold"><a href="https://cs.uwaterloo.ca/">Computer Science</a></span>.
+		I am currently a 1st year student, with a GPA of 3.98 and a cumulative average of 93%.
 	</p>
 	<p>
 		During my spare time, I enjoy playing chess, programming, and taking
-		long walks around the neighbourhood.
+		long walks.
 	</p>
 	<p>
 		You can find my resume here:
 	</p>
-	<button type="button" class="btn btn-primary">Resume</button>
+	<a href="files/DChen_resume.pdf" target="_blank">
+		<button type="button" class="btn btn-primary">Resume</button>
+	</a>
 
 </div>
 
@@ -105,19 +116,10 @@
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<!--li data-target="#carouselExampleIndicators" data-slide-to="2"></li-->
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a href="" target="_blank">
-					<img src="images/DC.png" class="d-block w-100" alt="...">
-				</a>
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="font-size:30pt;color:grey">My Logo</h5>
-					<p style="color:grey">What an amazing logo!</p>
-				</div>
-			</div>
-			<div class="carousel-item">
 				<a href="https://docs.google.com/document/d/1xxzRJf8HFd_uSK0-dKvgEKD5_zttwICI8spCfDV56CU/edit?usp=sharing" target="_blank">
 					<img src="images/motion_sensor_lamp.jpg" class="d-block w-100" alt="...">
 				</a>
@@ -143,6 +145,15 @@
 					</p>
 				</div>
 			</div>
+			<!--div class="carousel-item">
+				<a href="" target="_blank">
+					<img src="images/DC.png" class="d-block w-100" alt="...">
+				</a>
+				<div class="carousel-caption d-none d-md-block">
+					<h5 style="font-size:30pt;color:grey">My Logo</h5>
+					<p style="color:grey">What an amazing logo!</p>
+				</div>
+			</div-->
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -156,16 +167,15 @@
 </div>
 
 
-
-
-
-
-<div class="end" id="end">
+<div class="container-fluid end" id="end">
 	<h2>Contact Me!</h2>
 	<p>#5114 165 University Ave. West, Waterloo, ON, Canada, N2L 3E8</p>
+	<input type="text" value="7788558268" id="phoneNum"
+	       style="margin-left:-9999px;">
 	<table>
 		<tr>
-			<td><a><img src="images/cell.png" name="Cell Phone: (778) 855-8268"></a></td>
+			<td><img onclick="copyPhoneNumber()" src="images/cell.png"
+					 name="Cell Phone: (778) 855-8268"></td>
 			<td><a href="mailto:z539chen@edu.uwaterloo.ca"
 				   name="Email: z539chen@edu.uwaterloo.ca"><img src="images/mail.png"></a></td>
 			<td><a href="https://www.linkedin.com/in/daniel-chen-0b248816b/" target="_blank"
@@ -175,9 +185,13 @@
 				<img src="images/github.png"></a></td>
 		</tr>
 	</table>
+
+
+
 	<p>© 2019 Copyright: Zhizhou Chen</p>
-	<p></p>
-	<p></p>
+	<br>
+	<br>
+	<br>
 </div>
 
 
