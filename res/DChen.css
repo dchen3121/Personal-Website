@@ -290,6 +290,10 @@ body {
     }
 }
 
+@media (max-width: 300px) {
+    display:none;
+}
+
 
 .end {
 	background-color:#00004D;
