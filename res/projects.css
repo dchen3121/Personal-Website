@@ -55,6 +55,7 @@ body {
 	text-shadow:0px 0px 1px rgba(255, 255, 255, 0.5);
 }
 
+
 .various1 {
     background-image:url(../images/night_sky_bg.jpeg);
     background-repeat:repeat;
@@ -132,72 +133,18 @@ body {
     font-size:10pt;
 	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.8);
 }
-/*
-@media (max-width: 600px) {
-    .various1 {
-        padding-top:10opx;
-    }
-    .various2 {
-        padding-top:10opx;
-    }
-    .various3 {
-        padding-top:10opx;
-    }
-}*/
 
 
-/*
-.titleText td {
-    border:1px solid black;
-    border-collapse:separate;
-}
-
-.titleTextData{
-    width:20%;
-    text-align:right;
-    color:#363636;
-	font-size:12pt;
-	text-shadow:0px 0px 1px rgba(255,255,255,0.5);
-}
-
-.titleTextDChen {
-    width:40%;
-    color:#FFF;
-	font-size:50pt;
-	font-weight:bold;
-	text-align:left;
-	text-shadow:-1px 1px 12px rgba(0,0,0,1.0);
-}*/
-
-.body {
-	margin-top:0px;
-	padding:0px;
-}
 
 
-.about {
+
+
+.description {
     margin-top:100px;
-    padding:40px;
-	background-color:#CCCCCC;
-	border:0px solid white;
-	border-radius:30px;
-	width:70%;
-	margin-left:auto;
-	margin-right:auto;
-	/*
-	background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));*/
+    margin-bottom:30px;
 }
 
-@media (max-width: 650px) {
-    .about {
-        width:90%;
-    }
-}
-
-.about h1{
+.description h1 {
     padding-top:20px;
 	padding-bottom:20px;
 	color:#003;
@@ -207,7 +154,7 @@ body {
 	text-transform:uppercase;
 }
 
-.about h1:after {
+.description h1:after {
     width:100px;
     height:2px;
     background-color:#000090;
@@ -218,81 +165,153 @@ body {
     margin-bottom:10px;
 }
 
-.about p{
+.description p{
 	padding:0px 5% 15px 5%;
 	font-size:14pt;
 	line-height:130%;
-	text-align:justify;
+	text-align:center;
 	text-transform:none;
 	color: rgba(0, 0, 40, 0.85);
 }
-
-.btn {
-    margin-left: 5%;
-}
-
-.about a {
+.description a {
     color:black;
     text-decoration:none;
 }
 
+@media (max-width: 650px) {
+    .description {
+        width:90%;
+    }
+}
+
 @media (max-width: 550px) {
-    .about h1 {
+    .description h1 {
         font-size:20pt;
     }
-    .about p {
+    .description p {
         font-size:12pt;
     }
 }
 
-.projects h1{
-    padding-top:60px;
-	padding-bottom:20px;
-	color:#003;
-	font-size:28pt;
-	font-weight:bold;
-	text-align:center;
-	text-transform:uppercase;
+
+
+
+.selectors{
+    margin: 0px auto 150px auto;
 }
 
-.projects h1:after {
-    width:100px;
+.selectors button {
+    padding-left:40px;
+    padding-right:40px;
+}
+
+
+
+
+
+
+.project {
+    display:-webkit-flex;
+    display:flex;
+    padding:80px;
+    border-radius:80px;
+    margin-bottom:80px;
+}
+
+
+
+
+
+.project-description {
+    -webkit-flex:3;
+    -ms-flex:3;
+    flex:3;
+    padding-right:60px;
+}
+
+.project-description h3{
+    font-size:20pt;
+    font-weight:bold;
+    padding-bottom:20px;
+    color:#000;
+}
+
+.project-description h3:after {
+    width:80%;
     height:2px;
-    background-color:#000090;
+    background-color:#000;
     display:block;
     content:" ";
-    margin:0px auto;
-    margin-top:25px;
+    margin-top:20px;
+}
+
+.project-description h5 {
+    font-size:12pt;
+    font-weight:bold;
+    color:#930;
     margin-bottom:10px;
 }
 
-.projects {
-    text-align:center;
-    margin-bottom:70px;
+.project-description h6 {
+    font-size:12pt;
+    font-weight:normal;
+    color:#666;
 }
+
+.project-description p{
+	font-size:13pt;
+	line-height:125%;
+	text-align:justify;
+	text-transform:none;
+	color:rgba(0, 0, 40, 0.85);
+}
+
+@media (max-width:767.5px) {
+    .project-description h5, h6 {
+        font-size:10pt;
+    }
+    .project-description p {
+        font-size:11pt;
+    }
+}
+
+
+
+
 
 .carousel {
-    border:10px groove rgb(0,0,0);
-    margin-left:auto;
-    margin-right:auto;
-    width:500px;
-    height:500px;
+    padding:0px;
+    border:10px solid rgb(0,0,0);
+    -webkit-flex:3;
+    -ms-flex:3;
+    flex:3;
+    margin-left:20px;
 }
 
-
-@media (max-width: 550px) {
+@media (max-width:994px) {
+    .project {
+        -webkit-flex-direction:column;
+        flex-direction:column;
+        padding:40px;
+        border-radius:40px;
+    }
     .carousel {
-        width:85%;
-        height:85%;
+        margin:14px;
     }
-    .projects h1 {
-        font-size:20pt;
+    .project-description {
+        padding:15px;
     }
 }
+
+
+
+
+
 
 
 .end {
 	background-color:#00004D;
+	margin-top:500px;
 	padding-top:50px;
 	text-align:center;
 	color:rgb(255,255,255);
@@ -339,5 +358,3 @@ body {
     width:30px;
     height:30px;
 }
-
-	
