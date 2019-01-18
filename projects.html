@@ -14,14 +14,14 @@
 <body>
 
 <header>
-	<div class="logo">
+	<div class="logo" id="top">
 		<img class="DClogo" src="images/DC.png" alt="logo of DChen">
 	</div>
 
 	<div class="heading">
 		<ul class="main-navigation">
 			<li><a href="index.html">HOME</a></li>
-			<li><a href="#top">PROJECTS</a></li>
+			<li><a href="#top" style="color:white;font-weight:900;">PROJECTS</a></li>
 			<li><a href="#end">CONNECT</a></li>
 		</ul>
 	</div>
@@ -58,7 +58,7 @@
 </header> <!-- Header contains the navbar and the changing background quotes -->
 
 
-<div id="top" class="container description">
+<div class="container description">
 	<h1>PROJECTS</h1>
 	<p>Here is a list of all my projects. You can check them out on my
 		<a href="https://github.com/dchen3121" target="_blank"
@@ -77,7 +77,7 @@
 	 style="background-color:rgba(255,204,153,0.6);">
 	<div id="project1description" class="project-description">
 		<h3>COptimism</h3>
-		<h5>Python, PyGame, Tkinter GUI, Minimax Algorithm</h5>
+		<h5 style="color:#930;">Python, PyGame, Tkinter GUI, Minimax Algorithm</h5>
 		<p>COptimism is a chess engine programmed in <span style="font-weight:bold;">python</span>,
 			with a user interface built
 			with <span style="font-weight:bold">PyGame</span>. It implements the AI using the
@@ -118,19 +118,19 @@
 
 
 <div id="project2" class="container project"
-	 style="background-color:rgba(255,204,153,0.6);">
+	 style="background-color:rgba(102,153,235,0.6);">
 	<div id="project2description" class="project-description">
-		<h3>COptimism</h3>
-		<h5>Python, PyGame, Tkinter GUI, Minimax Algorithm</h5>
-		<p>COptimism is a chess engine programmed in <span style="font-weight:bold;">python</span>,
-			with a user interface built
-			with <span style="font-weight:bold">PyGame</span>. It implements the AI using the
-			<span style="font-weight:bold;">minimax algorithm</span>, which takes in a
-			position on the board and evaluates it based on material advantage, piece activity,
-			centre control, king safety, etc. Then, the algorithm is passed to the AI, who
-			views each possible position at a depth of the user's choice and makes its move.</p>
+		<h3>Motion Sensor Lamp</h3>
+		<h5 style="color:#339;">Python, Raspberry Pi, Circuits</h5>
+		<p>
+			This automatic motion sensor lamp was built with a <span style="font-weight:bold">
+			Raspberry Pi</span>, along with PIR (passive infrared) sensors, relay switches, an
+			old lamp after soldering, and backend programmed in <span style="font-weight:bold">
+			python</span>. When the sensors detect heat waves in front of it, it turns on the lamp.
+			The time interval for shut-off and sensor sensitivity can be adjusted accordingly.
+		</p>
 		<br>
-		<h6>Jan. 2019, Starterhacks</h6>
+		<h6>Apr. 2018</h6>
 	</div>
 	<div id="project2carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 		<ol class="carousel-indicators">
@@ -139,13 +139,15 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a href="https://github.com/jessica-cao/COptimism" target="_blank">
-					<img src="images/chess.PNG" class="d-block w-100" alt="An image of the chess AI in action">
+				<a href="https://docs.google.com/document/d/1xxzRJf8HFd_uSK0-dKvgEKD5_zttwICI8spCfDV56CU/edit?usp=sharing"
+				   target="_blank">
+					<img src="images/motion_sensor_lamp.jpg" class="d-block w-100" alt="An image of the circuitry">
 				</a>
 			</div>
 			<div class="carousel-item">
-				<a href="https://github.com/jessica-cao/COptimism" target="_blank">
-					<img src="images/chesscode.PNG" class="d-block w-100" alt="An image of the code for the AI">
+				<a href="https://docs.google.com/document/d/1xxzRJf8HFd_uSK0-dKvgEKD5_zttwICI8spCfDV56CU/edit?usp=sharing"
+				   target="_blank">
+					<img src="images/lampcode.png" class="d-block w-100" alt="An image of the backend code">
 				</a>
 			</div>
 		</div>
